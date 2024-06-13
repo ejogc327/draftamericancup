@@ -1,0 +1,7 @@
+.users-panel {
+    max-width: 280px;
+}
+.table-panel {
+    max-height: 600px;
+    overflow-y: scroll;
+}
