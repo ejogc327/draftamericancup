@@ -8,21 +8,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
 </head>
 <body>
     <div class="gotodraft-container container">
-        <form action="./draftScene.html" method="post">
+        <form>
             <!-- Team name input -->
             <div data-mdb-input-init class="form-outline mb-4">
-              <input type="email" id="form2Example1" class="form-control" />
               <label class="form-label" for="form2Example1">Team name</label>
+              <input type="text" id="teamname" class="form-control" />
             </div>
                     
             <!-- Submit button -->
-            <button  type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Ir al Draft</button>
+            <button  type="button" id="btnEditTeamName" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Edit</button>
+            <button  type="button" id="btnSaveTeamName" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Save</button>
+            <button  type="button" id="btnToDraft" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Ir al Draft</button>
           
           </form>
     </div>
     <script src="goToDraft.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
